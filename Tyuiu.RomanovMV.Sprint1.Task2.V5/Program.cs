@@ -1,7 +1,7 @@
 ﻿
-using Tyuiu.RomanovMV.Sprint1.Task1.V24.Lib;
+using Tyuiu.RomanovMV.Sprint1.Task2.V5.Lib;
 
-namespace Tyuiu.RomanovMV.Sprint1.Task1.V24
+namespace Tyuiu.RomanovMV.Sprint1.Task2.V5
 {
     internal class Program
     {
@@ -13,32 +13,30 @@ namespace Tyuiu.RomanovMV.Sprint1.Task1.V24
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт №1                                                               *");
-            Console.WriteLine("* Тема: Организация ввода/вывода в консольных приложениях                 *");
+            Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
             Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #24                                                              *");
+            Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнил: Романов Максим Викторович | ИИПБ-26-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* и вычисляет результат по формуле (1 - x) / (2 + y)                      *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя длину стороны    *");
+            Console.WriteLine("* куба и вычисляет площадь его поверхностей                               *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            int x;
 
-            Console.WriteLine("Ведите значение Х:");
-            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ведите длину стороны куба:");
+            x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Ведите значение Y:");
-            y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            Console.WriteLine("Площадь поверхности куба = " + ds.CalculateSideSquare(x));
 
             Console.ReadLine();
         }
