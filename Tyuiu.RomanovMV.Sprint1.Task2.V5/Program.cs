@@ -14,7 +14,7 @@ namespace Tyuiu.RomanovMV.Sprint1.Task2.V5
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт №1                                                               *");
             Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Задание #2                                                              *");
             Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнил: Романов Максим Викторович | ИИПБ-26-1                         *");
             Console.WriteLine("***************************************************************************");
@@ -28,7 +28,7 @@ namespace Tyuiu.RomanovMV.Sprint1.Task2.V5
 
             int x;
 
-            Console.WriteLine("Ведите длину стороны куба:");
+            Console.WriteLine("Введите длину стороны куба:");
             x = Convert.ToInt32(Console.ReadLine());
 
 
