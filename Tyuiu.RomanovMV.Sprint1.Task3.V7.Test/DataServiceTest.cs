@@ -1,7 +1,7 @@
 ﻿
-using Tyuiu.RomanovMV.Sprint1.Task2.V7.Lib;
+using Tyuiu.RomanovMV.Sprint1.Task3.V7.Lib;
 
-namespace Tyuiu.RomanovMV.Sprint1.Task2.V7.Test
+namespace Tyuiu.RomanovMV.Sprint1.Task3.V7.Test
 {
     [TestClass]
     public sealed class DataServiceTest
