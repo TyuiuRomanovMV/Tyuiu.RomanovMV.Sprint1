@@ -1,7 +1,7 @@
 ﻿
-using Tyuiu.RomanovMV.Sprint1.Task6.V17.Lib;
+using Tyuiu.RomanovMV.Sprint1.Task7.V7.Lib;
 
-namespace Tyuiu.RomanovMV.Sprint1.Task6.V17
+namespace Tyuiu.RomanovMV.Sprint1.Task7.V7
 {
     internal class Program
     {
@@ -20,25 +20,30 @@ namespace Tyuiu.RomanovMV.Sprint1.Task6.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Написать программу: пользователь вводит текст. Проверить, что           *");
-            Console.WriteLine("* строка является перевертышем.                                           *");
+            Console.WriteLine("* Написать программу, которая вычисляет математическое выражение по       *");
+            Console.WriteLine("* исходным значениям данных, вводимых пользователем                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*               cos(x)                                                    *");
+            Console.WriteLine("* формула z =  ---------- + 16x * cos(xy) - 2                             *");
+            Console.WriteLine("*              П - 2y^x                                                   *");
+            Console.WriteLine("***************************************************************************");
 
-            string value;
+            double x, y;
 
-            Console.WriteLine("Введите строку:");
-            value = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Введите значение Х:");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            if (ds.CheckPalindrome(value))
-                Console.WriteLine("Строка является перевёртышем.");
-            else
-                Console.WriteLine("Строка не является перевёртышем.");
+            Console.WriteLine(ds.Calculate(x, y));
+
 
             Console.ReadLine();
         }
